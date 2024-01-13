@@ -15,7 +15,7 @@ export default function DefaultPage() {
                 <div className="row">
                     <div className="col">
                         <h1>Default Page</h1>
-                        <Card {...data} width="300px" />
+                        <Card {...data} />
                     </div>
                 </div>
             </div>
