@@ -1,6 +1,6 @@
-export default function Card({ photo, title, text, link, width }) {
+export default function Card({ photo, title, text, link }) {
     return (
-        <div className="card actual" style={{ width }}>
+        <div className="card actual" style={{ width: "300px" }}>
             <img src={photo} className="card-img-top" alt="" />
 
             <div className="card-body">

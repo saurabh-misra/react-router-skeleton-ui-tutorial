@@ -17,10 +17,10 @@ export default function SkeletonPage() {
                 <div className="row">
                     <div className="col">
                         <h1>Skeleton Page</h1>
-                        <React.Suspense fallback={<CardSkeleton width="300px" /> }>
+                        <React.Suspense fallback={<CardSkeleton /> }>
                             <Await resolve={data} errorElement={<p>Error!</p>}>
                                 {
-                                    (data) => <Card {...data} width="300px" />
+                                    (data) => <Card {...data} />
                                 }
                             </Await>
                         </React.Suspense>
